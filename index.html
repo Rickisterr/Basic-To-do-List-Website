@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/index-styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="Scripts/index_script.js"></script>
+    </head>
+    <body>
+        <div class="Header">
+            <h1>To Do List</h1>
+        </div>
+        <div class="Main-Tab">
+            <div class="Tasks-Display" id="TasksDisp">
+
+            </div>
+            <div class="Tasks-Options" id="TasksOpt">
+                <button class="trash" onclick="trashButton()"><i class="glyphicon glyphicon-trash"></i></button>
+                <button class="done" onclick="doneButton()"><i class="glyphicon glyphicon-ok"></i></button>
+            </div>
+        </div>
+        <div class="Tasks-Input">
+            <div style="display: inline;">
+                <label style="font-size: 20px;" for="task-write">Task Input</label>
+                <input type="text" id="task-write" name="task-write" placeholder="Enter brief task description here">
+            </div>
+            <div style="display: inline;">
+                <button id="Enter" onclick="taskSubmit()">Enter</button>
+            </div>
+        </div>
+    </body>
+</html>
